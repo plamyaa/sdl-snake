@@ -12,7 +12,7 @@ satisfy_vscode_mac:
 all_default: compile run
 
 compile:
-	gcc *.c `pkg-config --cflags --libs SDL2_ttf` -o snake
+	gcc src/*.c `pkg-config --cflags --libs SDL2_ttf` -o snake
 
 run:
 	./snake
